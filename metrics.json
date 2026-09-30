@@ -1,0 +1,52 @@
+{
+  "train_size": 16800,
+  "test_size": 4200,
+  "total_samples": 21000,
+  "genuine_count": 10500,
+  "fake_count": 10500,
+  "vocabulary_size": 5000,
+  "label_mapping": {
+    "__label1__": "Fake (1)",
+    "__label2__": "Genuine (0)"
+  },
+  "nb_metrics": {
+    "model_name": "Naive Bayes",
+    "accuracy": 0.79,
+    "precision": 0.7935209198779005,
+    "recall": 0.79,
+    "f1_score": 0.7893683438429302,
+    "confusion_matrix": [
+      [
+        1774,
+        326
+      ],
+      [
+        556,
+        1544
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n     Genuine       0.76      0.84      0.80      2100\n        Fake       0.83      0.74      0.78      2100\n\n    accuracy                           0.79      4200\n   macro avg       0.79      0.79      0.79      4200\nweighted avg       0.79      0.79      0.79      4200\n"
+  },
+  "lr_metrics": {
+    "model_name": "Logistic Regression",
+    "accuracy": 0.805,
+    "precision": 0.8063812165456108,
+    "recall": 0.805,
+    "f1_score": 0.8047799790682458,
+    "confusion_matrix": [
+      [
+        1761,
+        339
+      ],
+      [
+        480,
+        1620
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n     Genuine       0.79      0.84      0.81      2100\n        Fake       0.83      0.77      0.80      2100\n\n    accuracy                           0.81      4200\n   macro avg       0.81      0.80      0.80      4200\nweighted avg       0.81      0.81      0.80      4200\n"
+  },
+  "target_names": [
+    "Genuine",
+    "Fake"
+  ]
+}
